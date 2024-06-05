@@ -1,0 +1,26 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Camada com gradiente -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="0"
+                android:startColor="#FF4135"
+                android:centerColor="#4046CD"
+                android:endColor="#FFC426" />
+            <corners android:radius="20dp" /> <!-- Ajuste o raio conforme necessário -->
+        </shape>
+    </item>
+
+    <!-- Camada com bordas brancas para criar o efeito de bordas arredondadas por fora -->
+    <item
+        android:bottom="3dp"
+        android:top="3dp"
+        android:left="3dp"
+        android:right="3dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" /> <!-- Cor transparente -->
+            <solid android:color="@color/white"/>
+            <corners android:radius="20dp" /> <!-- Ajuste o raio conforme necessário -->
+        </shape>
+    </item>
+</layer-list>
